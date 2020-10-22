@@ -1,0 +1,14 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 3.5rem;
+  }
+.back{
+    background: url('src/assets/img/overlay2.png'),url('src/assets/img/hotel6.jpg');
+    background-size: cover;
+} 
+
+.a{
+color: white;
+margin-top: 255px;
+margin-left: 400px;
+}

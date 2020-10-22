@@ -1,0 +1,56 @@
+<app-header></app-header>
+  
+  <main role="main">
+  
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron back ">
+      <div class="container a">
+        <h1 class="display-3">Once you visit there</h1>
+        <h2>You'll never forget</h2>  
+      </div>
+    </div>
+
+<!-- Content -->
+    <div *ngFor="let data of datas">
+  
+    <div class="container ">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-5">
+          <h2>{{data.heading}}</h2>
+          <p>{{data.content}}</p>
+          
+        </div>
+        <div class="col-md-7">
+          <img class="d-block w-100" src="assets/img/about.jpg" alt="First slide">
+        </div>
+        
+      </div>
+  
+      <hr>
+  
+    </div> <!-- /container -->
+
+    <div class="container ">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-7">
+          <img class="d-block w-100" src="assets/img/hotel3.jpg" alt="First slide">
+        </div>
+        <div class="col-md-5">
+          <h2>{{data.heading1}}</h2>
+          <p>{{data.content1}}</p>
+          </div>
+        
+        
+      </div>
+  
+      <hr>
+  
+    </div> 
+
+  </div>
+
+  </main>
+  
+  <app-footer></app-footer>

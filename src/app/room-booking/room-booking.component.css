@@ -1,0 +1,31 @@
+.banner{
+    
+    background: url('src/assets/img/room.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-size: cover;
+    
+}
+
+.lab{
+    color:white;
+}
+
+
+.ban{
+    
+    background:url('src/assets/img/overlay2.png'), url('src/assets/img/room1.jpg');
+    background-repeat: no-repeat;
+    /* background-size: 100% auto; */
+    background-size: cover;
+    height: 500px;
+    
+}
+
+.cont{
+    /* background-color: white; */
+    color: white;
+    margin-top: 304px;
+    margin-left: 117px;
+    height: 118px;
+}

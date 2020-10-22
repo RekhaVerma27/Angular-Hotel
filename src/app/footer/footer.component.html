@@ -1,0 +1,86 @@
+<div class="container-fluid" style="background-color:black; color: white;" >
+    <footer class="page-footer font-small blue pt-4">
+        <div class="container-fluid text-center text-md-left">
+          <div class="row">
+            <div class="col-md-4 mt-md-0 mt-2" >
+    
+              <p>Here you can use rows and columns to organize your footer content.</p>
+              <h5 class="text-uppercase">For Latest Update Subscribe Now</h5>
+    
+              <form [formGroup]="subscribe" (ngSubmit)="collectData()">
+                <div class="form-group"> 
+                  <input type="email" class="form-control" name="email" formControlName="email"> 
+                </div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+              
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <div class="col-md-4 mb-md-0 mb-4" >
+              <h5 class="text-uppercase"  style="text-align: center;">Contact Information</h5>
+              <div class="row">
+                    <div class="col-md-6" >  
+                      <ul class="list-unstyled uli">
+                          <li>
+                          <a href="#!">E-Mail</a>
+                          </li>
+                          <li>
+                          <a href="#!">Mobile No</a>
+                          </li>
+                          <li>
+                          <a href="#!">Address</a>
+                          </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6" >  
+                      <ul class="list-unstyled uli" *ngFor="let data of datas">
+                      <li>
+                          <a href="#!">{{data.email}}</a>
+                      </li>
+                      <li>
+                          <a href="#!">{{data.mobile_no}}</a>
+                      </li>
+                      <li>
+                          <a href="#!">{{data.address}}</a>
+                      </li>
+                      </ul>
+                    </div>
+              </div>         
+            </div>
+            
+            <div class="col-md-4 mb-md-0 mb-4" style="text-align: center;">
+      
+              <!-- Links -->
+              <!-- <h5 class="text-uppercase" style="text-align: center;">Linksfdgdgdgdfgdfg</h5> -->
+      
+              <div class="row a"> 
+                <div>
+                  <a href="#" class="fa fa-facebook"></a>
+                </div>
+                <div>
+                  <a href="#" class="fa fa-google-plus"></a>
+                </div>
+                <div>
+                  <a href="#" class="fa fa-youtube"></a>
+                </div>
+                <div>
+                  <a href="#" class="fa fa-twitter"></a>
+                </div>
+              </div>
+      
+            </div>
+            
+      
+          </div>
+          
+      
+        </div>
+        
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="#"> Rk-Hotels.com</a>
+        </div>
+        
+      </footer>
+      
+    </div>

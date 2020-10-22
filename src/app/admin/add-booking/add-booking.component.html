@@ -1,0 +1,107 @@
+  <!-- Content Wrapper. Contains page content -->
+  
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Add Booking</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Booking</a></li>
+              <li class="breadcrumb-item active">Add Booking</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- alert -->
+<div *ngIf="alert"  class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success!</strong>Your Data has been entered.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<!-- alert end -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Add Booking</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form [formGroup]="booking2" (ngSubmit)="collectData()">
+                
+                <div class="card-body row">
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="text" name="name" formControlName="name" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Email</label>
+                    <input type="email" name="email" formControlName="email" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Mobile Number</label>
+                    <input type="text" name="mobile_no" formControlName="mobile_no" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Room Type</label>
+                    <select name="room_type" formControlName="room_type" class="form-control">
+                        <option>Select Your Room Type</option>
+                        <option value="Standard Room">Standard Room(1 to 2 people)</option>
+                        <option value="Family Room">Family Room(1 to 4 people)</option>
+                        <option value="Private Room">Private Room(1 to 3 people)</option>
+                        <option value="Mix Dorm Room">Mix Dorm Room(6 people)</option>
+                        <option value="Female Dorm Room">Female Dorm Room(6 people)</option>
+                        <option value="Male Dorm Room">Male Dorm Room(6 people)</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Arival Date</label>
+                    <input type="date" name="arival_date" formControlName="arival_date" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Departure Date</label>
+                    <input type="date" name="departure_date" formControlName="departure_date" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Number of Guest</label>
+                    <input type="text" name="no_of_guest" formControlName="no_of_guest" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Flight Number</label>
+                    <input type="text" name="flight_no" formControlName="flight_no" class="form-control">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="exampleInputPassword1">Special Request</label>
+                    <textarea class="form-control" id="message" name="special_request" formControlName="special_request" rows="2"></textarea>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary" name="submit" style="  margin-left: 45%;" >Book Now</button><br>
+                </div>
+              </form>
+            </div>
+            <!-- /.card -->
+
+          </div>
+          <!--/.col (left) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  
+  <!-- /.content-wrapper -->

@@ -1,0 +1,27 @@
+<div class="container">
+    <table class="table">
+    <tr>
+        <th>name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Image</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let data of datas">    
+          <td>{{data.name}}</td>
+          <td>{{data.email}}</td>
+          <td>{{data.password}}</td>
+          <td><img [src]="data.image_path" width="200px" height="200px"></td>
+          <td>
+              <a [routerLink]="['/myregister', data.id]" class="btn btn-info btn-sm">Edit</a>
+              <a [routerLink]="['/show', data.id]" class="btn btn-info btn-sm">Show</a>
+              <a (click)="onDelete(data.id)" class="btn btn-danger btn-sm">Delete</a>
+          </td>
+
+
+          <!-- <td>{{news.desc}}</td> -->
+          <!-- <td><img [src]="news.urlToImage" width="100px" height="200px"></td> -->
+      </tr>
+    </table>
+</div>
+

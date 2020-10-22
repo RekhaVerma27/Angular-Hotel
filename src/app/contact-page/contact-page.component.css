@@ -1,0 +1,24 @@
+.banner{
+    
+    background: url('src/assets/img/hotel3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-size: cover;
+    height: 500px;
+    
+}
+
+.cont{
+    background-color: white;
+    margin-top: 304px;
+    margin-left: 117px;
+    height: 118px;
+}
+
+.form{
+    background:url('src/assets/img/overlay2.png'),url('src/assets/img/hotel5.jpg');
+    background-repeat: no-repeat;
+    /* background-size: 100% auto; */
+    background-size: cover;
+    
+}
